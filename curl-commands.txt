@@ -1,0 +1,11 @@
+
+
+{
+    "name": "testuser",
+    "email": "info@gmail.com"
+}
+
+
+curl -v -XPOST -d '{"name": "testuser", "email": "info@gmail.com"}' localhost:8080/register
+
+curl -v -XGET localhost:8080/user?email=info@gmail.com
